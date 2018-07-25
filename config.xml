@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.blogspot.misterdosbox.sendemailanonymo"
+    versionCode = "10"
+    version     = "1.0.0" >
+
+<!-- Icono creado por Freepik desde www.flaticon.com  versionCode is optional and Android only -->
+
+  <name>Send Email Anonymo</name>
+
+  <description>
+    Con esta aplicación podrás enviar de forma rápida, segura y eficiente correos electrónicos
+    anónimamente, no necesitaras registrarte ni validarte, únicamente ingresas a la aplicación
+    digitas el correo al cual le vas a enviar la información, el asunto del correo y un mensaje, fácilmente
+    sin complicaciones, la aplicación no almacena la información enviada, en ningún momento sabremos
+    para que fines la utilizas, nuestro principal objetivo es que puedas enviar correos electrónicos
+    de forma privada, anónimamente sin que el destinatario sepa quien es el emisor original, aparte de toda las
+    garantías que te ofrecemos la aplicación soporta HTML, puedes enviar tus correos con formato HTML
+    y serán reconocidos por el motor del destinatario.
+
+creditos:
+Icono creado por Freepik desde www.flaticon.com
+
+  </description>
+
+  <author href="https://misterdosbox.blogspot.com" email="mauriciolopezramirez99060@gmail.com">
+      Mauricio López Ramírez
+  </author>
+
+
+<preference name="orientation" value="portrait" />
+
+<gap:plugin name="phonegap-admob" source="npm"/>
+
+  <plugin name="cordova-plugin-device-orientation" spec="~1.0.5" />
+
+<!--    <plugin name="cordova-plugin-network-information" spec="~1.3.1" /> -->
+
+    <plugin name="cordova-plugin-whitelist" spec="~1.3.1" />
+
+    <platform name="android">
+           <!--
+               ldpi    : 36x36 px
+               mdpi    : 48x48 px
+               hdpi    : 72x72 px
+               xhdpi   : 96x96 px
+               xxhdpi  : 144x144 px
+               xxxhdpi : 192x192 px
+           -->
+           <icon src="iconos/24.png" density="ldpi" />
+           <icon src="iconos/32.png" density="mdpi" />
+           <icon src="iconos/64.png" density="hdpi" />
+           <icon src="iconos/128.png" density="xhdpi" />
+           <icon src="iconos/256.png" density="xxhdpi" />
+           <icon src="iconos/512.png" density="xxxhdpi" />
+       </platform>
+
+  <access origin="*"/>
+
+  <allow-navigation href="*" />
+
+  <allow-intent href="http://*/*" />
+
+  <allow-intent href="https://*/*" />
+
+</widget>

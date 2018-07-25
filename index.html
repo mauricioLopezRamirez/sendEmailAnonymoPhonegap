@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>EmailAnonymo</title>
+
+    <style>html{background-color:#56baed}body{font-family:"Poppins",sans-serif;height:100vh;margin:0}a{color:#92badd;display:inline-block;text-decoration:none;font-weight:400}.wrapper{display:flex;align-items:center;flex-direction:column;justify-content:center;width:100%;padding:15px}#formContent{-webkit-border-radius:10px 10px 10px 10px;border-radius:10px 10px 10px 10px;background:#fff;padding:30px;width:100%;max-width:414px;position:relative;padding:0;-webkit-box-shadow:0 30px 60px 0 rgba(0,0,0,.3);box-shadow:0 30px 60px 0 rgba(0,0,0,.3);text-align:center}input[type=button],input[type=submit],input[type=reset]{background-color:#56baed;border:none;color:white;padding:15px 80px;text-align:center;text-decoration:none;display:inline-block;text-transform:uppercase;font-size:13px;-webkit-box-shadow:0 10px 30px 0 rgba(95,186,233,.4);box-shadow:0 10px 30px 0 rgba(95,186,233,.4);-webkit-border-radius:5px 5px 5px 5px;border-radius:5px 5px 5px 5px;margin:5px 20px 40px 20px;-webkit-transition:all 0.3s ease-in-out;-moz-transition:all 0.3s ease-in-out;-ms-transition:all 0.3s ease-in-out;-o-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out}input[type=button]:hover,input[type=submit]:hover,input[type=reset]:hover{background-color:#39ace7}input[type=button]:active,input[type=submit]:active,input[type=reset]:active{-moz-transform:scale(.95);-webkit-transform:scale(.95);-o-transform:scale(.95);-ms-transform:scale(.95);transform:scale(.95)}input[type=text],input[type=email]{background-color:#f6f6f6;border:none;color:#0d0d0d;padding:15px 32px;text-align:center;text-decoration:none;display:inline-block;font-size:16px;margin:5px;width:85%;border:2px solid #f6f6f6;-webkit-transition:all 0.5s ease-in-out;-moz-transition:all 0.5s ease-in-out;-ms-transition:all 0.5s ease-in-out;-o-transition:all 0.5s ease-in-out;transition:all 0.5s ease-in-out;-webkit-border-radius:5px 5px 5px 5px;border-radius:5px 5px 5px 5px}textarea{font-family:"Poppins",sans-serif;background-color:#f6f6f6;border:none;color:#0d0d0d;padding:15px 32px;text-align:center;text-decoration:none;display:inline-block;font-size:16px;margin:5px;width:85%;max-width:85%;min-width:85%;border:2px solid #f6f6f6;-webkit-transition:all 0.5s ease-in-out;-moz-transition:all 0.5s ease-in-out;-ms-transition:all 0.5s ease-in-out;-o-transition:all 0.5s ease-in-out;transition:all 0.5s ease-in-out;-webkit-border-radius:5px 5px 5px 5px;border-radius:5px 5px 5px 5px}textarea:focus{background-color:#fff;border-bottom:2px solid #5fbae9}textarea:placeholder{color:#ccc}input[type=text]:focus,input[type=email]:focus{background-color:#fff;border-bottom:2px solid #5fbae9}input[type=text]:placeholder,input[type=email]:placeholder{color:#ccc}.fadeInDown{-webkit-animation-name:fadeInDown;animation-name:fadeInDown;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}@-webkit-keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}100%{opacity:1;-webkit-transform:none;transform:none}}@keyframes fadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}100%{opacity:1;-webkit-transform:none;transform:none}}@-webkit-keyframes fadeIn{from{opacity:0}to{opacity:1}}@-moz-keyframes fadeIn{from{opacity:0}to{opacity:1}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}.fadeIn{opacity:0;-webkit-animation:fadeIn ease-in 1;-moz-animation:fadeIn ease-in 1;animation:fadeIn ease-in 1;-webkit-animation-fill-mode:forwards;-moz-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-duration:1s;-moz-animation-duration:1s;animation-duration:1s}.fadeIn.first{-webkit-animation-delay:0.4s;-moz-animation-delay:0.4s;animation-delay:0.4s;margin-bottom:-8%}.fadeIn.second{-webkit-animation-delay:0.6s;-moz-animation-delay:0.6s;animation-delay:0.6s}.fadeIn.third{-webkit-animation-delay:0.8s;-moz-animation-delay:0.8s;animation-delay:0.8s}.fadeIn.fourth{-webkit-animation-delay:1s;-moz-animation-delay:1s;animation-delay:1s}.underlineHover:after{display:block;left:0;bottom:-10px;width:0;height:2px;background-color:#56baed;content:"";transition:width 0.2s}.underlineHover:hover{color:#0d0d0d}.underlineHover:hover:after{width:100%}*:focus{outline:none}#icon{width:60%}*{box-sizing:border-box}ul{width:100%;list-style-type:none;background:#ff6b81;margin:0;height:60px;line-height:54px;font-size:25px;padding-left:10px;font-family:serif;color:#fff;text-decoration-style:wavy;font-weight:700}li{display:inline}</style>
+
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    </head>
+    <body>
+
+
+
+      <script>function initAds(){if(admob){var adPublisherIds={ios:{banner:"ca-app-pub-2387356705722517/9542585433",interstitial:"ca-app-pub-2387356705722517/1711470527"},android:{banner:"ca-app-pub-2387356705722517/9542585433",interstitial:"ca-app-pub-2387356705722517/1711470527"}};var admobid=(/(android)/i.test(navigator.userAgent))?adPublisherIds.android:adPublisherIds.ios;admob.setOptions({publisherId:admobid.banner,interstitialAdId:admobid.interstitial});registerAdEvents()}else{alert('AdMobAds plugin not ready')}}
+      function onAdLoaded(e){if(e.adType===admob.AD_TYPE.INTERSTITIAL){admob.showInterstitialAd();showNextInterstitial=setTimeout(function(){admob.requestInterstitialAd()},30*60*1000)}}
+      function registerAdEvents(){document.addEventListener(admob.events.onAdLoaded,onAdLoaded);document.addEventListener(admob.events.onAdFailedToLoad,function(e){});document.addEventListener(admob.events.onAdOpened,function(e){});document.addEventListener(admob.events.onAdClosed,function(e){});document.addEventListener(admob.events.onAdLeftApplication,function(e){});document.addEventListener(admob.events.onInAppPurchaseRequested,function(e){})}
+      function onDeviceReady(){document.removeEventListener('deviceready',onDeviceReady,!1);initAds();admob.createBannerView()}
+      document.addEventListener("deviceready",onDeviceReady,!1);</script>
+
+
+      <ul>
+  <li style="font-family:'Poppins', sans-serif;">Send Email Anonymo</li>
+</ul>
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+     <h2 style="color:dimgray;padding: 2%;">Envia tus correos de forma anonima</h2>
+    </div>
+
+    <!-- Login Form -->
+    <form onsubmit="return false" autocomplete="off">
+
+      <input type="email" id="correo" class="fadeIn second" name="correo" placeholder="Destinatario" required>
+      <input type="text" id="asunto" class="fadeIn third" name="asunto" placeholder="Asunto" required>
+
+        <textarea id="mensaje" class="fadeIn second" placeholder="Mensaje a enviar" required></textarea>
+
+
+        <input type="button"  onclick="enviar_correo();" class="fadeIn fourth" value="Enviar">
+    </form>
+
+
+  </div>
+</div>
+
+
+<script>function enviar_correo(){var correo=document.getElementById("correo").value;var asunto=document.getElementById("asunto").value;var mensaje=document.getElementById("mensaje").value;if(correo==""||asunto==""||mensaje==""){alert("Complete todos los campos")}
+else{var emailRegex=/^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;if(emailRegex.test(correo)){admob.requestInterstitialAd();$.ajax({method:"POST",url:"http://167.99.228.18/enviar_correo.php",data:{correo:correo,asunto:asunto,mensaje:mensaje}}).always(function(jqXHR,textStatus){if(textStatus!="success"){alert("Error: "+jqXHR.statusText)}else{var respuesta=JSON.parse(jqXHR);if(respuesta.message=="success"){window.location="email_enviado.html"}else{alert(respuesta.message+" "+respuesta.errors+" Reporta este error al siguiente correo: mauriciolopezramirez99060@gmail.com")}}})}else{alert("Email Incorrecto")}}}</script>
+
+    </body>
+</html>
